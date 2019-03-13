@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#FFBB00  ;
+  padding:20px;
+  float:left;
+  width:33%; /* The width is 33%, by default */
+}
+
+.main {
+  background-color:#FFFF00;
+  padding:20px;
+  float:left;
+  width:34%; /* The width is 34%, by default */
+}
+
+.right {
+  background-color: #BBFF00 ;
+  padding:20px;
+  float:left;
+  width:33%; /* The width is 33%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Media queries test</h2>
+
+
+<div class="left">
+  <p>My name is Sullivan.I studied in NTUST and majored in Informataion Management department. I am about to be 20 years old.</p>
+</div>
+
+<div class="main">
+  <p>I had been to the British and the Canada which make me to broaden my horizon and activate the interest of learning foreign language .</p>
+</div>
+
+<div class="right">
+  <p>My hobby is to watch the movie. I could rather eat less than spend more money on the movie tickets</p>
+</div>
+
+</body>
+</html>
+
