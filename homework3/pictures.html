@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FF8C00;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #D2B48C;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+div.relative {
+  position: relative;
+  left: 240px;
+  bottom:205px;
+  border: 0px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>Sullivan's pictures</h2>
+<header>
+  <h2>Sullivan</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <div class="dropdown">
+      <button class="dropbtn">introduction</button>
+        <div class="dropdown-content">
+          <a href="introduction.html">intro</a>
+          <a href="school.html">school</a>
+          <a href="pictures.html">pictures</a>
+        </div>
+      </div>
+
+      
+    </ul>
+
+  </nav>
+  
+  <article>
+    <h1>Sullivan's pictures</h1>
+    <div class="dropdown">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7v1rPdOKAa5CRA1JjPdE8Vs4pnvUfsaTaf_tlGfJRvdc6L4Sz" alt="me" width="200" height="200">
+        <div class="dropdown-content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7v1rPdOKAa5CRA1JjPdE8Vs4pnvUfsaTaf_tlGfJRvdc6L4Sz" alt="me" width="300" height="300">
+      <div class="desc">This is me!!!</div>
+  </div>
+</div>
+<div class="relative">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONeJyikXwfNAPUwcesFyxFbsmctoGy6kPg8VACdXTuRIxr9JLrA" alt="me" width="200" height="200">
+
+
+</div>
+
+
+
+   
+    
+  </article>
+</section>
+
+<footer>
+  <p>Stay hungry Stay foolish</p>
+</footer>
+
+</body>
+</html>
+
